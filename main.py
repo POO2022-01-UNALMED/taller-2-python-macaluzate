@@ -33,11 +33,11 @@ class Auto():
         mensaje2="Las piezas no son originales"
         if self.registro == self.asientos[0].registro:
             if self.motor.registro == self.registro:
-                print(mensaje1)
+                return (mensaje1)
             else:
-                print(mensaje2)
+                return(mensaje2)
         else:
-            print(mensaje2)
+            return(mensaje2)
 
 class Motor():
     pass
