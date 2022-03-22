@@ -9,15 +9,13 @@ class Asiento():
             self.color=color
 
 class Auto():
-    pass
-    def __init__(self,modelo,precio,asientos,marca,motor,registro,cantidadCreados):
+    def __init__(self,modelo,precio,asientos,marca,motor,registro):
         self.modelo=modelo
         self.precio= precio
         self.asientos= list(asientos)
         self.marca= marca
         self.motor= motor
         self.registro= registro
-        self.cantidadCreados= int(cantidadCreados)
 
     def cantidadAsientos(self):
         contadorasientos=0
