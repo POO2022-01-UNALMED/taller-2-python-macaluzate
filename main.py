@@ -1,7 +1,3 @@
-from shutil import RegistryError
-from turtle import color
-
-
 class Asiento():
     pass
     def __init__(self,color,precio,registro):
@@ -46,3 +42,18 @@ class Motor():
     pass
     def __init__(self,numeroCilindros,tipo,registro):
         self.numeroCilindros = numeroCilindros
+        self.tipo= tipo
+        self.registro = registro
+
+    def cambiarRegistro(self,registro):
+        self.registro=registro
+
+    def AsignarTipo(self,tipo):
+        if (tipo=="electrico" or tipo=="gasolina"):
+            self.tipo=tipo
+
+
+
+
+
+
